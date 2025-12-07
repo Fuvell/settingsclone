@@ -38,12 +38,38 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    // 1. Base Kotlin
+    implementation("androidx.core:core-ktx:1.17.0")
+
+    // 2. SESL CORE (One UI 8 / Android 15)
+    implementation("sesl.androidx.core:core-ktx:1.17.0+1.0.7-sesl8+rev1")
+    implementation("sesl.androidx.appcompat:appcompat:1.7.1+1.0.21-sesl8+rev6")
+    implementation("sesl.androidx.recyclerview:recyclerview:1.4.0+1.0.12-sesl8+rev2")
+    implementation("sesl.androidx.preference:preference:1.2.1+1.0.0-sesl8+rev1")
+    implementation("sesl.androidx.drawerlayout:drawerlayout:1.2.0+1.0.0-sesl8+rev0")
+
+    // 3. SESL MATERIAL (The Styling)
+    implementation("sesl.com.google.android.material:material:1.12.0+1.0.32-sesl8+rev1")
+
+    // 4. ONE UI DESIGN (The Complex Widgets)
+    implementation("io.github.tribalfs:oneui-design:0.8.15+oneui8")
+
+    // 5. THE EXCLUSION PARADOX (Updated for new Group IDs)
+    modules {
+        module("androidx.recyclerview:recyclerview") {
+            replacedBy("sesl.androidx.recyclerview:recyclerview", "Use SESL RecyclerView")
+        }
+        module("androidx.drawerlayout:drawerlayout") {
+            replacedBy("sesl.androidx.drawerlayout:drawerlayout", "Use SESL DrawerLayout")
+        }
+        module("com.google.android.material:material") {
+            replacedBy("sesl.com.google.android.material:material", "Use SESL Material")
+        }
+        module("androidx.preference:preference") {
+            replacedBy("sesl.androidx.preference:preference", "Use SESL Preference")
+        }
+        module("androidx.appcompat:appcompat") {
+            replacedBy("sesl.androidx.appcompat:appcompat", "Use SESL AppCompat")
+        }
+    }
 }
