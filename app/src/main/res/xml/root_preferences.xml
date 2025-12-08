@@ -1,0 +1,133 @@
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.SwitchPreferenceCompat
+            app:key="wifi"
+            app:title="Wi-Fi"
+            app:summary="사용 안 함"
+            app:icon="@drawable/ic_oui_wifi"
+            app:iconTint="#0381FE"
+            app:defaultValue="false" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            app:key="bluetooth"
+            app:title="블루투스"
+            app:summary="연결된 기기 없음"
+            app:icon="@drawable/ic_oui_bluetooth"
+            app:iconTint="#0381FE"
+            app:defaultValue="true" />
+
+        <androidx.preference.SwitchPreferenceCompat
+            app:key="nfc"
+            app:title="NFC 및 비접촉 결제"
+            app:summary="기본 모드"
+            app:icon="@drawable/ic_oui_nfc"
+            app:iconTint="#0381FE"
+            app:defaultValue="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            app:key="sounds"
+            app:title="소리 및 진동"
+            app:summary="소리"
+            app:icon="@android:drawable/ic_lock_silent_mode_off"
+            app:iconTint="#7F57E3" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            app:key="display"
+            app:title="디스플레이"
+            app:summary="다크 모드, 편안하게 화면 보기"
+            app:icon="@android:drawable/ic_menu_gallery"
+            app:iconTint="#5CC237" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            app:key="wallpaper"
+            app:title="배경화면 및 스타일"
+            app:summary="배경화면, 컬러 팔레트"
+            app:icon="@android:drawable/ic_menu_gallery"
+            app:iconTint="#F06292" />
+        <androidx.preference.Preference
+            app:key="themes"
+            app:title="테마"
+            app:summary="테마, 배경화면, 아이콘"
+            app:icon="@android:drawable/ic_menu_view"
+            app:iconTint="#F06292" />
+        <androidx.preference.Preference
+            app:key="home_screen"
+            app:title="홈 화면"
+            app:summary="레이아웃, 앱 배지"
+            app:icon="@android:drawable/ic_menu_sort_by_size"
+            app:iconTint="#F06292" />
+        <androidx.preference.Preference
+            app:key="lock_screen"
+            app:title="잠금화면"
+            app:summary="화면 잠금 방식, AOD"
+            app:icon="@android:drawable/ic_lock_lock"
+            app:iconTint="#F06292" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            app:key="security"
+            app:title="보안 및 개인정보 보호"
+            app:summary="생체 인식, 권한 관리자"
+            app:icon="@android:drawable/ic_secure"
+            app:iconTint="#4CAF50" />
+        <androidx.preference.Preference
+            app:key="location"
+            app:title="위치"
+            app:summary="위치 권한 요청"
+            app:icon="@android:drawable/ic_menu_mylocation"
+            app:iconTint="#8BC34A" />
+        <androidx.preference.Preference
+            app:key="safety"
+            app:title="안전 및 긴급"
+            app:summary="의료 정보, 긴급 알림"
+            app:icon="@android:drawable/stat_sys_warning"
+            app:iconTint="#F44336" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.Preference
+            app:key="accounts"
+            app:title="계정 및 백업"
+            app:summary="삼성 클라우드, 스마트 스위치"
+            app:icon="@android:drawable/ic_menu_save"
+            app:iconTint="#2196F3" />
+        <androidx.preference.Preference
+            app:key="google"
+            app:title="Google"
+            app:summary="Google 서비스"
+            app:icon="@android:drawable/ic_menu_search"
+            app:iconTint="#757575" />
+        <androidx.preference.Preference
+            app:key="advanced"
+            app:title="유용한 기능"
+            app:summary="S펜, 사이드 버튼, 모션"
+            app:icon="@android:drawable/ic_menu_preferences"
+            app:iconTint="#FFC107" />
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

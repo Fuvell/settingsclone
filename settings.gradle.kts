@@ -19,9 +19,8 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
 
-        // 1. SESL AndroidX (Core, Recycler, Preference)
+        // 1. SESL AndroidX (Core)
         maven {
-            name = "SeslAndroidX"
             url = java.net.URI("https://maven.pkg.github.com/tribalfs/sesl-androidx")
             credentials {
                 username = localProperties.getProperty("gpr.usr")
@@ -29,9 +28,8 @@ dependencyResolutionManagement {
             }
         }
 
-        // 2. SESL Material (Buttons, Colors, Shapes)
+        // 2. SESL Material (Buttons/Shapes)
         maven {
-            name = "SeslMaterial"
             url = java.net.URI("https://maven.pkg.github.com/tribalfs/sesl-material-components-android")
             credentials {
                 username = localProperties.getProperty("gpr.usr")
@@ -39,9 +37,8 @@ dependencyResolutionManagement {
             }
         }
 
-        // 3. OneUI Design (The Big Headers & Pickers)
+        // 3. OneUI Design (The Theme & Headers) <--- CRITICAL FIX
         maven {
-            name = "OneUIDesign"
             url = java.net.URI("https://maven.pkg.github.com/tribalfs/oneui-design")
             credentials {
                 username = localProperties.getProperty("gpr.usr")
