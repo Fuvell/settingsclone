@@ -14,7 +14,7 @@
             app:defaultValue="false" />
 
         <androidx.preference.SwitchPreferenceCompat
-            app:key="deviceconnet"
+            app:key="deviceconnect"
             app:title="기기 간 연결"
             app:summary="Quick Share • Samsung DeX"
             app:icon="@drawable/ic_oui_category_attic"
