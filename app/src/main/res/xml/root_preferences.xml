@@ -17,9 +17,9 @@
             app:key="deviceconnet"
             app:title="기기 간 연결"
             app:summary="Quick Share • Samsung DeX"
-            app:icon="@drawable/ic_oui_category_attic" //Fix this
+            app:icon="@drawable/ic_oui_category_attic"
             app:iconTint="#0381FE"
-            app:defaultValue="true" />
+            app:defaultValue="true" /> //Fix this
 
     </androidx.preference.PreferenceCategory>
 
@@ -30,9 +30,9 @@
             app:key="routine"
             app:title="모드 및 루틴"
             app:summary="모드 • 루틴"
-            app:icon="@drawable/ic_oui_category_my_routines" //Color is different
+            app:icon="@drawable/ic_oui_category_my_routines"
             app:iconTint="#0381FE"
-            app:defaultValue="true" />
+            app:defaultValue="true" /> //Color is different
 
         <androidx.preference.Preference
             app:key="sound"
@@ -45,8 +45,8 @@
             app:key="notification"
             app:title="알림"
             app:summary="상태표시줄 • 방해금지"
-            app:icon="@drawable/ic_oui_category_notifications" //Icon is different
-            app:iconTint="#7F57E3" />
+            app:icon="@drawable/ic_oui_category_notifications"
+            app:iconTint="#7F57E3" /> //Icon is different
 
     </androidx.preference.PreferenceCategory>
 
@@ -64,8 +64,8 @@
             app:key="display"
             app:title="디스플레이"
             app:summary="다크 모드, 편안하게 화면 보기"
-            app:icon="@drawable/ic_oui_category_battery" //Color and icon is different
-            app:iconTint="#5CC237" />
+            app:icon="@drawable/ic_oui_category_battery"
+            app:iconTint="#5CC237" /> //Color and icon is different
 
     </androidx.preference.PreferenceCategory>
 
