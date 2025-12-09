@@ -6,26 +6,18 @@
         app:iconSpaceReserved="false">
 
         <androidx.preference.SwitchPreferenceCompat
-            app:key="wifi"
-            app:title="Wi-Fi"
-            app:summary="사용 안 함"
-            app:icon="@drawable/ic_oui_wifi"
+            app:key="connections"
+            app:title="연결"
+            app:summary="Wi-Fi • 블루투스 • 비행기 탑승 모드"
+            app:icon="@drawable/ic_oui_category_connections"
             app:iconTint="#0381FE"
             app:defaultValue="false" />
 
         <androidx.preference.SwitchPreferenceCompat
-            app:key="bluetooth"
-            app:title="블루투스"
-            app:summary="연결된 기기 없음"
-            app:icon="@drawable/ic_oui_bluetooth"
-            app:iconTint="#0381FE"
-            app:defaultValue="true" />
-
-        <androidx.preference.SwitchPreferenceCompat
-            app:key="nfc"
-            app:title="NFC 및 비접촉 결제"
-            app:summary="기본 모드"
-            app:icon="@drawable/ic_oui_nfc"
+            app:key="deviceconnet"
+            app:title="기기 간 연결"
+            app:summary="Quick Share • Samsung DeX"
+            app:icon="@drawable/ic_oui_category_attic" //Fix this
             app:iconTint="#0381FE"
             app:defaultValue="true" />
 
@@ -34,11 +26,26 @@
     <androidx.preference.PreferenceCategory
         app:iconSpaceReserved="false">
 
+        <androidx.preference.SwitchPreferenceCompat
+            app:key="routine"
+            app:title="모드 및 루틴"
+            app:summary="모드 • 루틴"
+            app:icon="@drawable/ic_oui_category_my_routines" //Color is different
+            app:iconTint="#0381FE"
+            app:defaultValue="true" />
+
         <androidx.preference.Preference
-            app:key="sounds"
-            app:title="소리 및 진동"
-            app:summary="소리"
-            app:icon="@android:drawable/ic_lock_silent_mode_off"
+            app:key="sound"
+            app:title="소리"
+            app:summary="소리 모드 • 벨소리"
+            app:icon="@drawable/ic_oui_category_sounds"
+            app:iconTint="#7F57E3" />
+
+        <androidx.preference.Preference
+            app:key="notification"
+            app:title="알림"
+            app:summary="상태표시줄 • 방해금지"
+            app:icon="@drawable/ic_oui_category_notifications" //Icon is different
             app:iconTint="#7F57E3" />
 
     </androidx.preference.PreferenceCategory>
@@ -50,7 +57,14 @@
             app:key="display"
             app:title="디스플레이"
             app:summary="다크 모드, 편안하게 화면 보기"
-            app:icon="@android:drawable/ic_menu_gallery"
+            app:icon="@drawable/ic_oui_category_display"
+            app:iconTint="#5CC237" />
+
+        <androidx.preference.Preference
+            app:key="display"
+            app:title="디스플레이"
+            app:summary="다크 모드, 편안하게 화면 보기"
+            app:icon="@drawable/ic_oui_category_battery" //Color and icon is different
             app:iconTint="#5CC237" />
 
     </androidx.preference.PreferenceCategory>
